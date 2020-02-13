@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    background-color: #ccc;
     font-family: "Arial", sans-serif;
 }
 
@@ -94,9 +95,12 @@ body {
     width: 100%;
 }
 
-
 .about-product {
     padding: 50px;
+}
+
+.about-product video{
+    width: 100%;
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -588,3 +592,45 @@ footer address .socialIcons {
         height: 50px;
     }
 } 
+
+.testVideo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.flexBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexBlockText p{
+    text-align: center;
+    color: yellow;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .flexBlockText p {
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+}
+
+.flexBlockText {
+    width: 50%;
+}
+
+
+
+
